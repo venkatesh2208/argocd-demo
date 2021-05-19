@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: nginx
-  name: nginx
+    app: Apache Tomcat
+  name: Apache Tomcat
   namespace: default
 spec:
   ports:
