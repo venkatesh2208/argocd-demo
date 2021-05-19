@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: Apache Tomcat
-  name: Apache Tomcat
+    app: tomcat
+  name: tomcat
   namespace: default
 spec:
   ports:
@@ -11,5 +11,5 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: Apache Tomcat
+    app: tomcat
   type: NodePort
