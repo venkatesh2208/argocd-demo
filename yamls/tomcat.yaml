@@ -2,18 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: nginx
-  name: nginx
+    app: Apache Tomcat
+  name: Apache Tomcat
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: Apache Tomcat
   template:
     metadata:
       labels:
-        app: nginx
+        app: Apache Tomcat
     spec:
       containers:
-      - image: nginx
-        name: nginx
+      - image: tomcat
+        name: Apache Tomcat
